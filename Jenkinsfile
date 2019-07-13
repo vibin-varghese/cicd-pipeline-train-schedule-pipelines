@@ -1,5 +1,5 @@
 pipeline {
-  agent any {
+    agent any
     stages {
       stage('Build') {
         echo 'Build running'
@@ -7,5 +7,4 @@ pipeline {
         archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
-  }
 }
